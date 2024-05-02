@@ -115,7 +115,7 @@ public class WeatherControllerTest {
 	        String persistedTime = wController.persistTemperature(hour, temperature);
 	        // Wait for the simulated delay in the persistTemperature method
 	        WeatherController.sleep(3); 
-	        // Assert: Verify that the persisted time matches the expected current time
+	        // Assert that the persisted time matches the expected current time
 	        assertEquals("Persisted time should match the current time", currentTime, persistedTime);
 	   	
 	}
